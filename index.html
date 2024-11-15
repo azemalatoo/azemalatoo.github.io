@@ -12,15 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 <header class="header">
     <div class="container">
         <div class="flex">
-            <a href="#" class="logo">
-                <img src="assets/logo.png" alt="logo">
-            </a>
+            <button class="back-button"> <img src="assets/logo.svg" alt="logo"></button>
 
             <ul class="nav">
                 <li class="nav-item">
@@ -30,7 +29,7 @@
                     <a class="nav-link" href="#">schedule</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">forms</a>
+                    <a class="nav-link" href="/profile">forms</a>
                 </li>
             </ul>
 
@@ -41,102 +40,145 @@
         </div>
     </div>
 </header>
-<main class="main" id="A">
-    <div class="one">
-        <div class="container main_c">
-            <div class="main_one">
-                <h1 class="main_title">Make computer vision and artificial intelligence systems closer to students</h1>
-                <button class="main_btn_one">LOG IN</button>
-                <button class="main_btn_two">SIGN IN</button>
-            </div>
-            <div class="main_two">
-                <img src="assets/circle.png" alt="1фото">
-            </div>
+<main>
+ <section id="main" class="page active">
+     <div class="main" id="A">
+         <div class="one">
+             <div class="container main_c">
+                 <div class="main_one">
+                     <h1 class="main_title">Make computer vision and artificial intelligence systems closer to students</h1>
+                     <button class="main_btn_one">LOG IN</button>
+                     <button class="main_btn_two">SIGN IN</button>
+                 </div>
+                 <div class="main_two">
+                     <img src="assets/circle.svg" alt="1фото">
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div>
+         <div class="problems">
+             <h3 class="problems_title">Problems</h3>
+             <div class="problems_cards">
+                 <div class="card">
+                     <img class="card_img" src="assets/card_1.png" alt="card_1"/>
+                     <span class="card_title">Automatic class attendance</span>
+                 </div>
+                 <div class="card">
+                     <img class="card_img" src="assets/card_2.png" alt="card_2"/>
+                     <span class="card_title">Food recognition for cafeteria and dining hall</span>
+                 </div>
+                 <div class="card">
+                     <img class="card_img" src="assets/card_3.png" alt="card_3"/>
+                     <span class="card_title">Pathology detection by photo of ECG</span>
+                 </div>
+                 <div class="card">
+                     <img class="card_img" src="assets/card_4.png" alt="card_4"/>
+                     <span class="card_title">Automatic gate for cars with license plate number recognition</span>
+                 </div>
+                 <div class="card">
+                     <img class="card_img" src="assets/card_5.png" alt="card_15"/>
+                     <span class="card_title">Handwritten text recognition</span>
+                 </div>
+                 <div class="card">
+                     <img class="card_img" src="assets/card_6.png" alt="card_6"/>
+                     <span class="card_title">Automatic traffic light based on computer vision</span>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="bg">
+         <div class="schedule" id="B">
+             <div class="container">
+                 <h3 class="schedule_title">Schedule</h3>
+                 <div class="schedule_cards">
+                     <img src="assets/schedule.svg" alt="schedule"/>
+                 </div>
+             </div>
+         </div>
+         <div class="forms">
+             <div class="container">
+                 <div class="form_wrapper">
+                     <div>
+                         <h3 class="form_title">Forms</h3>
+                         <div class="form">
+                             <label for="name">Name</label>
+                             <input type="text" id="name" placeholder="Name...">
+                             <label for="email">Email</label>
+                             <input type="email" id="email" placeholder="Email...">
+                             <label for="password">Password</label>
+                             <input type="text" id="password" placeholder="Password...">
+                         </div>
+                         <button type="submit" class="submit_btn">Submit</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
+    <section id="profile" class="page">
+        <div class="profile-container">
+            <aside class="profile-sidebar">
+                <div class="profile-sidebar__inner">
+                    <h2 class="profile-user-title">USER</h2>
+                    <nav class="profile-nav-menu">
+                        <ul>
+                            <li class="profile-nav-item active"><a href="#">Profile</a></li>
+                            <li class="profile-nav-item"><a href="#">Teams</a></li>
+                            <li class="profile-nav-item"><a href="#">Team Market</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </aside>
+            <main class="profile-main-content">
+                <div class="profile-header">
+                    <button class="profile-back-button back-button">
+                       <img src="assets/back.svg" alt="btn">
+                    </button>
+                    <div class="profile-info">
+                        <div class="profile-picture">
+                            <img src="assets/user.png" alt="Profile Picture">
+                        </div>
+                        <div class="profile-details">
+                            <h2 class="profile-name">Name Surname</h2>
+                            <div class="profile-info-text">
+                                <span>Coach</span>
+                                <span>Computer Science</span>
+                                <span>UID: 712548698</span>
+                            </div>
+                            <button class="profile-edit-button">EDIT</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form Section -->
+                <div class="profile-form" id="profileForm">
+                    <form>
+                        <div class="form-group">
+                            <label for="profile-name">Name</label>
+                            <input type="text" id="profile-name" placeholder="Name...">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-surname">Surname</label>
+                            <input type="text" id="profile-surname" placeholder="Surname...">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-email">Email</label>
+                            <input type="email" id="profile-email" placeholder="Email...">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-password">Password</label>
+                            <input type="password" id="profile-password" placeholder="Password...">
+                        </div>
+                        <button type="submit" class="save-button">SAVE</button>
+                    </form>
+                </div>
+
+            </main>
         </div>
-    </div>
+    </section>
 </main>
-<div>
-    <div class="problems">
-        <h3 class="problems_title">Problems</h3>
-        <div class="problems_cards">
-            <div class="card">
-                <img class="card_img" src="assets/card_1.png" alt="card_1"/>
-                <span class="card_title">Automatic class attendance</span>
-            </div>
-            <div class="card">
-                <img class="card_img" src="assets/card_2.png" alt="card_2"/>
-                <span class="card_title">Food recognition for cafeteria and dining hall</span>
-            </div>
-            <div class="card">
-                <img class="card_img" src="assets/card_3.png" alt="card_3"/>
-                <span class="card_title">Pathology detection by photo of ECG</span>
-            </div>
-            <div class="card">
-                <img class="card_img" src="assets/card_4.png" alt="card_4"/>
-                <span class="card_title">Automatic gate for cars with license plate number recognition</span>
-            </div>
-            <div class="card">
-                <img class="card_img" src="assets/card_5.png" alt="card_15"/>
-                <span class="card_title">Handwritten text recognition</span>
-            </div>
-            <div class="card">
-                <img class="card_img" src="assets/card_6.png" alt="card_6"/>
-                <span class="card_title">Automatic traffic light based on computer vision</span>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="bg">
-    <div class="schedule" id="B">
-        <div class="container">
-            <h3 class="schedule_title">Schedule</h3>
-            <div class="schedule_cards">
-                <div class="schedule_card">
-                    <div class="circle">
-                        <img class="design_card" src="assets/design_card.png" alt="design">
-                    </div>
-                    <img src="assets/step_1.png" alt="step_1">
-                    <p class="description">Design Research</p>
-                </div>
-                <div class="schedule_card">
-                    <div class="circle">
-                        <img class="design_card" src="assets/project_card.png" alt="project">
-                    </div>
-                    <img src="assets/step_2.png" alt="step_2">
-                    <p class="description">Project development</p>
-                </div>
-                <div class="schedule_card">
-                    <div class="circle">
-                        <img class="design_card" src="assets/finish_card.png" alt="finish">
-                    </div>
-                    <img src="assets/step_3.png" alt="step_3">
-                    <p class="description">Final Pitch</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="forms">
-        <div class="container">
-            <div class="form_wrapper">
-                <div>
-                    <h3 class="form_title">Forms</h3>
-                    <div class="form">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Name...">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Email...">
-                        <label for="password">Password</label>
-                        <input type="text" id="password" placeholder="Password...">
-                    </div>
-                    <button type="submit" class="submit_btn">Submit</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="sch">
-        <img src="assets/bg_schedule.png" alt="sch" />
-    </div>
-</div>
 <footer class="footer">
     <div class="container">
         <div class="flex">
@@ -152,7 +194,7 @@
                     <a class="nav-link" href="#">schedule</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">forms</a>
+                    <a class="nav-link" href="/profile">forms</a>
                 </li>
             </ul>
 
@@ -162,5 +204,54 @@
         </div>
     </div>
 </footer>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        //// switching content
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                const targetId = event.target.getAttribute('href').substring(1);
+                document.querySelectorAll('.page').forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+
+        //// profile form switching
+        const editButton = document.querySelector('.profile-edit-button');
+        const profileForm = document.getElementById('profileForm');
+
+        profileForm.style.display = 'none';
+
+        editButton.addEventListener('click', () => {
+            if (profileForm.style.display === 'none') {
+                profileForm.style.display = 'block';
+            } else {
+                profileForm.style.display = 'none';
+            }
+        });
+        /// go to main page
+        const backButton = document.querySelector('.back-button');
+        if (backButton) {
+            backButton.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                // Hide profile and show main content
+                document.querySelectorAll('.page').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById('main').classList.add('active');
+            });
+        }
+    });
+</script>
 </body>
 </html>
