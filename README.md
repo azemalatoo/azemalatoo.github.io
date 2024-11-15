@@ -1,5 +1,8 @@
 Web technologies midterm project: Landing Page based on Figma design
 
+Link to deployed site: https://azemalatoo.github.io
+
+
 
 
 
